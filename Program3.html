@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style> 
+    .tap0 {
+      background-color: yellow;
+      color: black;
+      border: black;
+    }.tap1 {
+      background-color: yellowgreen;
+      color: black;
+      border: black;
+    }
+    .tap2 {
+      background-color: palevioletred;
+      color: black;
+      border: black;
+    }.tap3 {
+      background-color: blueviolet;
+      color: black;
+      border: black;
+    }.tap4 {
+      background-color: seagreen;
+      color: black;
+      border: black;
+    }
+
+
+  </style>
+<title> Variables</title>
+</head>
+<body>
+    <button class = "tap0"  onclick=" console.log(`Show Quantity : ${cartq}`)"> Cart Quantity</button>
+    <button  class = "tap1" onclick=" cartq += 1;
+    console.log(`One Added : ${cartq}`)">Add to Cart </button>
+    <button class = "tap2" onclick="  cartq += 2 ;
+    console.log(`Two Added : ${cartq}`)"> +2 </button>
+    <button class = "tap3" onclick=" cartq += 3 ;
+    console.log(`Three Added : ${cartq}`)"> +3 </button>
+    <button class = "tap4" onclick="
+    cartq = 0 ;
+    console.log(`Everything was resetted : ${cartq}`)">Reset</button>
+    <script>
+     let cartq = 0;
+    </script>
+
+  </body>
+</html>
